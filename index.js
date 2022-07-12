@@ -247,9 +247,7 @@ for (var i = 0; i < collection.length; i++){
 
 
 /**
- * map: Designed to call function to determine if the collection is an object or an array. If it is an array pass the arguments "the element, it's index, 
- * collection and if it's an object pass the arguments "the value, it's key, collection". After this, it should return a value of each function in a new
- * array.
+ * map: Iterates over a collection and passes the current item into a callback function. The return value of this callback function is pushed into an output array that map returns.
  * 
  * @param {collection} array: The collection over which to iterate.
  * @param {Function} func: The Function to be applied to each element in the 
@@ -280,8 +278,7 @@ for (var i = 0; i < collection.length; i++){
  * pluck: Designed to return an array containing the value of the property parameter for every element in the array being passed through.
  * 
  * @param {collection} arr: The collection over which to iterate.
- * @param {A property} prop: The Function to be applied to each element in the 
- * array
+ * @param {A property} prop: string identifying the property we want to "pluck" all the values from. 
  * @return {new array} array: return value for every element in array
  */
 function(arr, prop) {
